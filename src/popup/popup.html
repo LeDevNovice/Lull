@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lull</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo-section">
+        <img src="../../assets/branding/logo.svg" alt="Lull logo" class="logo-icon" width="32" height="32">
+        <h1 class="logo-text">Lull</h1>
+      </div>
+      <p class="tagline">Clear dialogue, controlled music and sound. Find peace during your streaming sessions.</p>
+    </header>
+
+    <main class="main">
+      <div class="control-group">
+        <label class="toggle-container">
+          <input type="checkbox" id="enableToggle" checked>
+          <span class="toggle-slider"></span>
+          <span class="toggle-label">Normalized audio</span>
+        </label>
+      </div>
+
+      <div class="control-group">
+        <label class="section-label">Intensity</label>
+        <div class="intensity-buttons">
+          <button class="intensity-btn" data-intensity="light">
+            <span class="intensity-icon">◔</span>
+            <span>Light</span>
+          </button>
+          <button class="intensity-btn active" data-intensity="medium">
+            <span class="intensity-icon">◑</span>
+            <span>Medium</span>
+          </button>
+          <button class="intensity-btn" data-intensity="strong">
+            <span class="intensity-icon">●</span>
+            <span>Strong</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <p class="info-text">
+          Lull automatically balances the audio across all your videos.
+          Clear dialogue, controlled music.
+        </p>
+      </div>
+
+      <div class="status" id="status">
+        <span class="status-dot"></span>
+        <span id="statusText">Active normalizer</span>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="https://github.com/LeDevNovice/Lull" 
+           target="_blank" 
+           class="footer-link">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+      <p class="version">v1.0.0</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

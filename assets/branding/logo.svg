@@ -1,0 +1,20 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="lullGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <circle cx="64" cy="64" r="60" fill="url(#lullGradient)" opacity="0.1" />
+    <path d="M 20 64 Q 35 54, 50 64 T 80 64 T 108 64"
+        stroke="url(#lullGradient)"
+        stroke-width="6"
+        fill="none"
+        stroke-linecap="round" />
+    <path d="M 20 74 Q 35 68, 50 74 T 80 74 T 108 74"
+        stroke="url(#lullGradient)"
+        stroke-width="4"
+        fill="none"
+        stroke-linecap="round"
+        opacity="0.5" />
+</svg>
