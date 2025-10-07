@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Lull - Audio Normalizer for Streaming Platforms",
+  "short_name": "Lull",
+  "version": "1.0.0",
+  "description": "Clear dialogue, controlled music and sound. Find peace during your streaming sessions.",
+  "author": "LeDevNovice",
+  "homepage_url": "https://github.com/LeDevNovice/Lull",
+  
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
+    },
+    "default_title": "Lull - Audio Normalizer for Streaming Platforms"
+  },
+  
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  }
+}
