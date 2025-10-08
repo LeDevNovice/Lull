@@ -1,4 +1,7 @@
-import { LullExtensionState } from "./types/index";
+interface LullExtensionState {
+    enabled: boolean;
+    intensity: 'light' | 'medium' | 'strong';
+}
 
 const defaultState: LullExtensionState = {
     enabled: true,

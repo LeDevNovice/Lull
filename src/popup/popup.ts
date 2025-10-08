@@ -1,4 +1,7 @@
-import { LullExtensionState } from "../types/index";
+interface LullExtensionState {
+    enabled: boolean;
+    intensity: 'light' | 'medium' | 'strong';
+}
 
 class LullPopupController {
     private enableToggle: HTMLInputElement;
